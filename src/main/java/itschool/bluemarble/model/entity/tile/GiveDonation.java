@@ -5,9 +5,8 @@ import itschool.bluemarble.model.entity.tile.abs.SpecialTile;
 import itschool.bluemarble.model.entity.tile.ifs.SpecialFunction;
 
 public class GiveDonation extends SpecialTile {
-    // private static DonationParty donationParty = DonationParty.getInstance();
     public GiveDonation(){
-        super("사회복지기금접수처", new SpecialFunction() {
+        super(20,"사회복지기금접수처", new SpecialFunction() {
             @Override
             public void execute(Player player) throws RuntimeException{
                 try {

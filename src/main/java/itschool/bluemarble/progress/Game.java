@@ -283,7 +283,7 @@ public abstract class Game implements GameInterface {
     private void arriveSpaceTravel(Player player) {
         // 인덱스 32번(컬럼비아 호) 타일 정보
         PurchasableTile columbia = (PurchasableTile) TILES.get(32);
-        SpaceTravel spaceTravel = new SpaceTravel(player.getName());
+        SpaceTravel spaceTravel = new SpaceTravel();
 
         // 컬럼비아 호 없으면 은행에 20만원 지불, 있다면 땅 주인에게 20만원 지불
         spaceTravel.payFee(player, columbia.getOwner());

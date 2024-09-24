@@ -1,6 +1,8 @@
 package itschool.bluemarble;
 
+import itschool.bluemarble.dao.base.CommomDao;
 import itschool.bluemarble.exception.needcheck.GameOver;
+import itschool.bluemarble.model.factory.TileFactory;
 import itschool.bluemarble.progress.GameByConsole;
 import itschool.bluemarble.progress.Game;
 
@@ -9,6 +11,8 @@ import java.util.Scanner;
 
 public class Application {
     public static void main(String[] args) {
+        // System.out.println(TileFactory.getTiles());
+
         // 스캐너는 GameByConsole에서 만든 하나의 스캐너를 공유받음
         Scanner sc = new Scanner(System.in);
 
@@ -44,5 +48,6 @@ public class Application {
         } catch (GameOver e) {
             System.out.println(e.getMessage()); // "님이 게임을 우승하셨습니다. 게임을 종료합니다."
         }
+
     }
 }

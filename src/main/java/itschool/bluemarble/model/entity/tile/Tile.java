@@ -6,6 +6,7 @@ import lombok.Getter;
 @Getter
 @AllArgsConstructor
 public class Tile {
+    protected int index;
     protected String name;
 
     @Override

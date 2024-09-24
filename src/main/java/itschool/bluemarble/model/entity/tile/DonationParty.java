@@ -14,7 +14,7 @@ public class DonationParty extends Tile {
     }
 
     private DonationParty() {
-        super("사회복지기금수령처");
+        super(38,"사회복지기금수령처");
         this.amount = 0;
     }
     // 싱글톤 끝
